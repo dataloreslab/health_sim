@@ -1,0 +1,66 @@
+{
+  "policies": [
+    {
+      "id": "smoking_cessation",
+      "name": "Smoking Cessation Campaign",
+      "description": "Targeted stop smoking support for deprived groups.",
+      "cost_per_capita": 40.0,
+      "target": {
+        "imd_quintiles": [1, 2]
+      },
+      "effects": {
+        "ltc_onset": -0.15,
+        "mortality": -0.05
+      },
+      "lag_months": 3,
+      "diminishing_return": 0.4
+    },
+    {
+      "id": "falls_prevention",
+      "name": "Falls Prevention",
+      "description": "Community physio and home modifications to cut falls and disability.",
+      "cost_per_capita": 55.0,
+      "target": {
+        "age_min": 75
+      },
+      "effects": {
+        "disability_onset": -0.2,
+        "hospitalisation": -0.1
+      },
+      "lag_months": 1,
+      "diminishing_return": 0.3
+    },
+    {
+      "id": "community_rehab",
+      "name": "Community Rehabilitation",
+      "description": "Intensive reablement and rehab offer.",
+      "cost_per_capita": 60.0,
+      "target": {
+        "ltc_level_min": 1
+      },
+      "effects": {
+        "disability_recovery": 0.25,
+        "capacity_community": 0.1
+      },
+      "lag_months": 0,
+      "diminishing_return": 0.2
+    },
+    {
+      "id": "winter_resilience",
+      "name": "Winter Resilience",
+      "description": "Home insulation, fuel support, vaccination drive.",
+      "cost_per_capita": 35.0,
+      "target": {
+        "season": "winter"
+      },
+      "effects": {
+        "mortality": -0.12,
+        "hospitalisation": -0.08,
+        "capacity_hospital": 0.05
+      },
+      "lag_months": 0,
+      "diminishing_return": 0.25
+    }
+  ],
+  "round_budget_gbp": 2500000
+}

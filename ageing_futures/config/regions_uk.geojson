@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"region": "North East"},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[ -2.5, 55.8 ], [ -1.2, 55.8 ], [ -1.2, 54.6 ], [ -2.5, 54.6 ], [ -2.5, 55.8 ]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"region": "North West"},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[ -3.6, 54.5 ], [ -2.0, 54.5 ], [ -2.0, 53.0 ], [ -3.6, 53.0 ], [ -3.6, 54.5 ]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"region": "London"},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[ -0.6, 51.7 ], [ 0.3, 51.7 ], [ 0.3, 51.2 ], [ -0.6, 51.2 ], [ -0.6, 51.7 ]]]
+      }
+    }
+  ]
+}

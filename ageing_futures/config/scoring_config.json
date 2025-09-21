@@ -1,0 +1,10 @@
+{
+  "weights": {
+    "health": 0.35,
+    "cost": 0.25,
+    "capacity": 0.2,
+    "equity": 0.2
+  },
+  "equity_outcomes": ["disability_prevalence", "hospital_bed_days"],
+  "normalisation": "zscore"
+}
