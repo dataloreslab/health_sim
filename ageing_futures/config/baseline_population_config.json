@@ -1,0 +1,47 @@
+{
+  "cohort_size": 10000,
+  "age_distribution": {
+    "65-69": 0.3,
+    "70-74": 0.28,
+    "75-79": 0.22,
+    "80-84": 0.15,
+    "85+": 0.05
+  },
+  "sex_distribution": {
+    "F": 0.55,
+    "M": 0.45
+  },
+  "regions": {
+    "North East": 0.05,
+    "North West": 0.12,
+    "Yorkshire and the Humber": 0.09,
+    "East Midlands": 0.08,
+    "West Midlands": 0.1,
+    "East of England": 0.11,
+    "London": 0.13,
+    "South East": 0.16,
+    "South West": 0.1,
+    "Wales": 0.06
+  },
+  "imd_distribution": [0.2, 0.2, 0.2, 0.2, 0.2],
+  "urban_rural_split": {
+    "Urban": 0.7,
+    "Rural": 0.3
+  },
+  "service_indices": {
+    "gp_density_mean": 0.0,
+    "gp_density_sd": 0.1,
+    "community_capacity_mean": 0.0,
+    "community_capacity_sd": 0.1
+  },
+  "environment_indices": {
+    "heat_exposure_mean": 0.0,
+    "heat_exposure_sd": 0.15,
+    "cold_exposure_mean": 0.0,
+    "cold_exposure_sd": 0.15
+  },
+  "care_capacity": {
+    "hospital_beds_per_1k": 3.0,
+    "care_home_beds_per_1k": 5.0
+  }
+}

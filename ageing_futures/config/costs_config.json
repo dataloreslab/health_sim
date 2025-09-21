@@ -1,0 +1,15 @@
+{
+  "unit_costs": {
+    "hospital_bed_day": 425.0,
+    "care_home_day": 180.0,
+    "community_contact": 45.0,
+    "policy_programme": 1.0
+  },
+  "qaly_weights": {
+    "healthy": 0.9,
+    "ltc_mild": 0.8,
+    "ltc_moderate": 0.65,
+    "ltc_severe": 0.45,
+    "disability": 0.5
+  }
+}

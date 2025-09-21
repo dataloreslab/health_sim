@@ -1,0 +1,72 @@
+{
+  "time_step_months": 1,
+  "transitions": {
+    "ltc_onset": {
+      "intercept": -3.2,
+      "coefficients": {
+        "age": 0.035,
+        "imd_quintile": 0.08,
+        "heat_exposure": 0.1,
+        "community_capacity": -0.12
+      }
+    },
+    "ltc_progression": {
+      "intercept": -3.5,
+      "coefficients": {
+        "age": 0.04,
+        "imd_quintile": 0.05,
+        "disability": 0.6
+      }
+    },
+    "disability_onset": {
+      "intercept": -2.8,
+      "coefficients": {
+        "age": 0.03,
+        "ltc_level": 0.9,
+        "imd_quintile": 0.07,
+        "cold_exposure": 0.09
+      }
+    },
+    "disability_recovery": {
+      "intercept": -1.4,
+      "coefficients": {
+        "community_capacity": -0.4,
+        "policy_rehab": -0.6
+      }
+    },
+    "hospitalisation": {
+      "intercept": -2.2,
+      "coefficients": {
+        "age": 0.025,
+        "ltc_level": 0.4,
+        "disability": 0.35,
+        "heat_exposure": 0.08,
+        "shock_hospital": 0.2
+      }
+    },
+    "care_home": {
+      "intercept": -3.0,
+      "coefficients": {
+        "age": 0.04,
+        "disability": 1.0,
+        "community_capacity": -0.3
+      }
+    },
+    "mortality": {
+      "intercept": -3.4,
+      "coefficients": {
+        "age": 0.05,
+        "ltc_level": 0.5,
+        "hospitalised": 0.7,
+        "shock_mortality": 0.25
+      }
+    }
+  },
+  "length_of_stay": {
+    "hospital": {
+      "mean": 7.0,
+      "overdispersion": 1.5,
+      "capacity_multiplier": 1.2
+    }
+  }
+}
